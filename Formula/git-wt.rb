@@ -32,16 +32,16 @@ class GitWt < Formula
     # Fish: auto-loaded at shell startup, no rc edit needed
     (share/"fish/vendor_conf.d").mkpath
     (share/"fish/vendor_conf.d/git-wt.fish").write(
-      Utils.safe_popen_read(bin/"git-wt", "init", "fish"),
+      Utils.safe_popen_read(bin/"git-wt", "init", "fish", "--alias"),
     )
 
     # Bash/zsh: pre-generated scripts the user sources from their rc
     (share/"git-wt").mkpath
     (share/"git-wt/init.bash").write(
-      Utils.safe_popen_read(bin/"git-wt", "init", "bash"),
+      Utils.safe_popen_read(bin/"git-wt", "init", "bash", "--alias"),
     )
     (share/"git-wt/init.zsh").write(
-      Utils.safe_popen_read(bin/"git-wt", "init", "zsh"),
+      Utils.safe_popen_read(bin/"git-wt", "init", "zsh", "--alias"),
     )
   end
 
