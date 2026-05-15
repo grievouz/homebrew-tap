@@ -1,28 +1,28 @@
 class GitWt < Formula
   desc "Git worktree helper"
   homepage "https://github.com/grievouz/git-wt"
-  version "0.1.0"
+  version "0.2.1"
   license "Unlicense"
 
   on_macos do
     on_arm do
       url "https://github.com/grievouz/git-wt/releases/download/v#{version}/git-wt-aarch64-apple-darwin.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "f5eeb5a1288550ee218148833deb8f48a571deb70a4f014af27975b06554bbbc"
     end
     on_intel do
       url "https://github.com/grievouz/git-wt/releases/download/v#{version}/git-wt-x86_64-apple-darwin.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "7456018096e245ff215570f450342842f450b007c2d87f64f6fdf6d1f30ebd3b"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/grievouz/git-wt/releases/download/v#{version}/git-wt-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "8224e32cd99ca97d51ffd39ebc084a86fbbfe7e1f16250f40666648da869a540"
     end
     on_intel do
       url "https://github.com/grievouz/git-wt/releases/download/v#{version}/git-wt-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "9b38452b6a69e24a076e26755d53554bdd8328ea4b3717b4ebfa7d873323dd06"
     end
   end
 
