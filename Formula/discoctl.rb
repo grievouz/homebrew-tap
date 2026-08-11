@@ -1,27 +1,27 @@
 class Discoctl < Formula
   desc "Scriptable Discord command-line client"
   homepage "https://github.com/grievouz/discoctl"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/grievouz/discoctl/releases/download/v#{version}/discoctl-aarch64-apple-darwin.tar.gz"
-      sha256 "062cbcf6029d1041081471049a58e55966a3a572c21386f1b9d61c12390a1d5e"
+      sha256 "d6dc772b308cc408ba54f7670f7265e3687c4f89c01e49003f28d6f35d3effd7"
     end
     on_intel do
       url "https://github.com/grievouz/discoctl/releases/download/v#{version}/discoctl-x86_64-apple-darwin.tar.gz"
-      sha256 "31982d981da78945611d98cf838c756dc6f60c91da19b5bfb33afef4ec8b3166"
+      sha256 "5a1168b4cd5ca5b3f6ff30b8c93239a20bc0057eabec0e507039e3cb6aaefa0d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/grievouz/discoctl/releases/download/v#{version}/discoctl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e4cff9a81d7f956e124c33a35f3446f399fa1357bab01f94ebd0be6a3494ae9d"
+      sha256 "866c448b625b872bb36a8e1017d4c4152ef8869a6c568cbb5323c5af76cdee02"
     end
     on_intel do
       url "https://github.com/grievouz/discoctl/releases/download/v#{version}/discoctl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "50d790e1d57d12fbc34a061421bed66ac740ba55bafcfeb406e1956aa8de8a3f"
+      sha256 "ddeb0eacae4b309456513df6b6bb4fde3cc933fc9bc5b3d0f651f1c72818ec61"
     end
   end
 
