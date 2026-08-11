@@ -12,6 +12,22 @@ Git worktree helper. Source: [grievouz/git-wt](https://github.com/grievouz/git-w
 brew install grievouz/tap/git-wt
 ```
 
+### discoctl
+
+Scriptable Discord command-line client. Source: [grievouz/discoctl](https://github.com/grievouz/discoctl).
+
+After its first tagged release:
+
+```sh
+brew install grievouz/tap/discoctl
+```
+
+Until then, install the current `main` branch:
+
+```sh
+brew install grievouz/tap/discoctl --HEAD
+```
+
 ## Contributing
 
 Contributions are welcome! Open an issue or submit a pull request on this repository. For bugs in a specific formula's upstream tool, please file them in the tool's own repository (linked in the table above).
