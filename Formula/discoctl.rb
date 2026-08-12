@@ -32,6 +32,6 @@ class Discoctl < Formula
   test do
     assert_match "discoctl version #{version}", shell_output("#{bin}/discoctl --version")
     output = shell_output("#{bin}/discoctl status clear --dry-run")
-    assert_match '"action": "clear_custom_status"', output
+    assert_match '"action":"clear_custom_status"', output
   end
 end
