@@ -1,13 +1,13 @@
 cask "swift-quit" do
-  version "1.0.0"
-  sha256 "d248ff33afd835c87dbde2a7bdf78024d838f70896cdb5b65619435df30a0697"
+  version "1.0.1"
+  sha256 "3797f108423babb3bc8a805832689e1ee8c504ed0d8408f57c79dc2540b77d7c"
 
   url "https://github.com/grievouz/swift-quit/releases/download/v#{version}/swift-quit-#{version}-universal.dmg"
   name "Swift Quit"
   desc "Quit apps after their last window closes"
   homepage "https://github.com/grievouz/swift-quit"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Swift Quit.app"
 
